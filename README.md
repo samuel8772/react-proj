@@ -29,11 +29,15 @@ Below are screenshots of the app in action.
 - **React Hooks**: Utilized for managing state (`useState`) and handling effects.
 - **Emojis**: Used in the UI for a fun, intuitive user experience.
 
-## 🛠️ Getting Started
+ Author
+Samuel Kamau Karobia
 
-To run this project locally:
+📧 Email: kamauskk005@gmail.com
 
-### 1. Clone the repository
+📱 Phone: +254 722 589421
 
-```bash
-git clone git@github.com:samuel8772/react-proj.git
+💼 GitHub Profile
+
+🌍 LinkedIn Profile
+
+
