@@ -36,8 +36,6 @@ Samuel Kamau Karobia
 
 📱 Phone: +254 722 589421
 
-💼 GitHub Profile
-
-🌍 LinkedIn Profile
+this is the live link to my proj:react-proj.pages.dev
 
 
