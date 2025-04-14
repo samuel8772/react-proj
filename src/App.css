@@ -1,0 +1,142 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://www.moneydigest.com/img/gallery/heres-how-much-money-really-exists-in-the-world/intro-1704559079.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+  
+  /* Container */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title */
+  h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .motto {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Layout: split in two */
+  .split-screen {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  button {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Search Bar */
+  .search-container {
+    margin-bottom: 20px;
+  }
+  
+  .search-container input {
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  td {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  button.delete {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 6px;
+  }
+  
+  button.delete:hover {
+    background-color: #c82333;
+  }
+  
