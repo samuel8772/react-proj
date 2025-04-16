@@ -21,6 +21,7 @@ function App() {
       amount: 1000,
     },
   ]);
+
   const [searchTerm, setSearchTerm] = useState('');
   const [sortBy, setSortBy] = useState('description');
 
@@ -63,7 +64,7 @@ function App() {
       <div className="layout">
         <div className="left-column">
           <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-          <ExpenseForm setExpenses={addExpense} />
+          <ExpenseForm onAddExpense={addExpense} />
           <label>🔽 Sort by:</label>
           <select onChange={handleSortChange} value={sortBy}>
             <option value="description">📝 Description</option>
@@ -80,3 +81,4 @@ function App() {
 }
 
 export default App;
+

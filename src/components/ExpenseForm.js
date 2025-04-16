@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function ExpenseForm({ setExpenses }) {
+function ExpenseForm({ onAddExpense }) {
   const [description, setDescription] = useState('');
   const [category, setCategory] = useState('');
   const [amount, setAmount] = useState('');
@@ -15,16 +15,15 @@ function ExpenseForm({ setExpenses }) {
     }
 
     const newExpense = {
-      id: Date.now(),
       description: `📝 ${description}`,
       category: `📂 ${category}`,
       amount: parseFloat(amount),
       date,
     };
 
-    setExpenses((prevExpenses) => [...prevExpenses, newExpense]);
+    onAddExpense(newExpense); // ✅ Correct usage now
 
-    // Reset form fields after submission
+    // Reset form fields
     setDescription('');
     setCategory('');
     setAmount('');
@@ -58,7 +57,7 @@ function ExpenseForm({ setExpenses }) {
           value={date}
           onChange={(e) => setDate(e.target.value)}
         />
-        <button type="submit">✅ Add Expense</button>
+        <button type="submit">➕ Add Expense</button>
       </form>
     </div>
   );
